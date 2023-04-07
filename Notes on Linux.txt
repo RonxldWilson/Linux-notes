@@ -1,0 +1,116 @@
+####################################################################
+Ways to access a Linux System
+1. Console
+2. Remote - Need the IP address to connect remotely
+
+If you want to connect to Linux machine via windows remotely you will need to connect via Putty Client on windows 
+This connection is done via CLI
+
+You can connect Via SSH if WIN 10 is the OS which is used for the opertion
+
+
+## What is files System?
+
+## File System in Linux
+
+/boot - files that is used by the boot loader
+/root root user home dir
+/dev System devices 
+/etc Confoig files
+/bin -> /usr/bin - Everyday user commands
+/sbin -> /usr/bin - Systme filesystem commands
+/opt - Optional
+/proc Running Processs
+/lib - C programming lib files need by commands
+/tmp - Dir for temp files
+/home - dir for user
+/var - System logs
+/run - Systen daemons that start very early to store runtime files like PID files
+/mnt To mount external filesystem
+/media For cdrom mounts
+
+### Commands for Traversing the File System
+
+pwd
+cd
+ls -l 
+
+#Linux File properties
+
+# of links - Number of Hard links to the file. 
+    For a hard link the # of hard links is the number of immediate subdirectories it has plus it's parent directory and itself
+
+
+#Linux File Types
+
+- = Regular File
+d = directory
+l = Link
+c = Special file or Device file
+s = socket
+p = Named Pipe
+b = block device
+
+
+What is Root?
+
+There are three types of root on Linux Systme
+1. Root Account
+2. Root as /: the very first directory in Linux is also refferred as root dir
+3. Root home directory: the root ujser account also has a directory located in /root whihc is called root home directory
+
+## Changing password = passwd userid
+
+
+#File System paths
+
+there are two types of paths:
+    -   absolute path
+    -   relative path
+
+cd /var/log/samba
+
+or cd var   
+    cd log
+    cd samba
+
+## Creating Files and directories
+    -   touch   Empty file 
+    -   cp  Copying an existing file 
+    -   vi  creating file using editor
+
+Creating dir
+    -   mkdir
+
+-> ls -ltr - to list the files and order them in a timely manner
+
+-> To exit VIM use :wq!
+
+To Copy a directory use the cp command with -R option for recursuve and specify the source
+and destination directories to be opened
+
+cp -R <source folder> <destination folder>
+
+To find a file use -"find" and "locate"
+
+-> find . -name "<name of the file>" = . means start from the current location
+-> find / -anme "<name of the file>"  = use this command to search from a particular repository
+
+# Diffrence between find and locate
+    -   Locate uses DB to find the file
+        -   Need to run updatedb if the the DB is not updated
+    -   Find iterates over the filesystem to locate the files
+
+Locate is faster than the Find command
+
+## wildcard
+* - zero or more characters
+? - represents a single character
+[]  - represents a range of characters 
+
+-> touch abc{1..9}-xyz = this will create the files from 1 to 9
+
+## Hard Links and Soft Links
+
+inode = Pointer or a number of a file on the hard disks
+
