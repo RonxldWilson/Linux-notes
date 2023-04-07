@@ -114,3 +114,83 @@ Locate is faster than the Find command
 
 inode = Pointer or a number of a file on the hard disks
 
+Soft Link = Link will be removed if the file is removed or renamed
+Hard Link = Deleting renaming or moving the original file will not affect the hard link
+
+Command: ln     = for hard link 
+         ln -s  = for soft link
+
+It's not possible to create a hard or soft link within the same directory, the links need to be made in the diffrent directory
+
+Command: cat   = for viewing the file 
+Command: echo  = for writing to the file
+
+Hard links work within the same partiion
+
+The rm command to remove the file doesn't remove the source of the file, it just removes the link to the file
+
+Command: passwd username = to change the password of a user
+
+Linux file system types: xfs, ext2, ext3
+windows file System types: NTFS 
+
+
+Command: ls -ltri = Lists the inodes of the file 
+
+# Command Syntax
+    Command Option arguments
+
+    Options: Modify the way that a command works
+    usually consist of a hyphen or a dash followed by a single letter
+    some commands accept multiple options which can be grouped together
+
+    Arguments: Most command are uswed with one arguments
+    Some commands assume a default commadn if none is supplied
+    Argumetns are optional for some commands but required for others
+
+#### File Permissions
+    UNIX is a multi-user system. Every file and directory in your account can be protected
+    from or made accessible to other users by changing its access permissions. Every user has
+    responsibility for controlling access to their files.
+    -   Permissions for a file or directory may be restricted to by types
+    -   There are 3 type of permissions
+            r -read
+            w- write
+            x - execute running a program
+    -   Each permission (rwx) can be controlled at three levels
+            u- user yourself
+            g - group can be people in the same project
+            o - other = everyone on the system
+    - File or Directory permission can be displayed by running ls -I command
+        -rwx rwx rwx
+    Command to change permission.
+        -   chmod
+
+Command: man <command> = Manual of the command 
+
+Command chmod g-w <filename>    =   This removes the write access to the file for the group
+        chmod a-r <filename>    =   This removes the read access to the file for everyone 
+        chmod u-r <filename>    =   This removes the read access from the user
+
+        chmod u+rw <filename>   = This gives the user read and write access  
+        chmod ugo+r <filename>   = This gives the user read access  
+
+ if you remove the x access from a directory then you wont be able to access the directory and open it
+
+
+
+Table for numerical assigning access
+
+Numebr      Permission Type     Symbol
+0           No Permission       -
+1           Execute             -x
+2           Write               -w-
+3           Execute+Write       -wx
+4           Read                r--
+5           Read+Execute        r-x
+6           Read+Write          rw-
+7           Read+Write+Execute  rwx
+
+Ex: chmod 764 <filename>
+    This gives the access as rwx to the user, rw to the group and read to all others
+
