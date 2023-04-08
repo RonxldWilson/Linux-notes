@@ -194,3 +194,81 @@ Numebr      Permission Type     Symbol
 Ex: chmod 764 <filename>
     This gives the access as rwx to the user, rw to the group and read to all others
 
+####################################################################
+File Ownership
+
+There are 2 ownners of a file or directory
+    User and group
+
+Command to change file Ownership
+    chown and chgrp
+        chown changes the ownership of a file
+        chgrp changes the froup ownership of a file
+Recursive ownership change option (cascade)
+    -R 
+
+####################################################################
+ACL - Access Control List 
+
+What is ACL?
+    Access control list (ACL) provides an additional, more flexible permission mechanism
+    for file systems. It is designed to assist with UNIX file permissions. ACL allows you to
+    give permissions for any user or group to any disc resource.
+Use of ACL
+    Think of a scenario in which a particular user is nota member of group created by you
+    but still you want to give some read or write access, how can you do it without making
+    user a member of group, here comes in picture Access Control Lists, ACL helps us to do
+    this trick
+    Basically, ACLs are used to make a flexible permission mechanism in Linux.
+    From Linux man pages, ACLs are used to define more fine-grained discretionary access
+    rights for files and directories.
+Commands to assign and remove ACL permissions are:
+    setfacl and getfacl
+
+List of commands for setting the ACL
+1. To add permission for user
+    setfacl -m u:user:rwx /path/to/file
+
+2. To add permission for a group
+    setfacl -m u:group:rwx /path/to/file
+
+3. To allow all files or directories to inherit ACL entries from the directory it is within
+    setfacl -Rm "entry" /path/to/dir
+
+4. To remove a specific entry
+    setfacl -x u:user   /path/to/file (For a specific user)
+
+5. To remove all entries
+    setfacl -b path/to/file (For all users)
+
+Note:
+    As you assign the ACL permission to a file/directory it adds + sign at the end of the permission
+    Setting write permission with ACL does not allow to remove a file
+
+Command: getfacl <filename>
+
+The point of ACL is that sometimes I want to give read access to for just one particular user, not the group
+just that one user, then we need to use ACLs 
+#######################################################
+
+Help Commands
+
+1. whatis command
+2. man command 
+3. command --help 
+#######################################################
+ 
+#Adding Text to Files
+    3 Simple ways to add text to a file
+    -   vi
+    -   Redirect command output > or >>  
+    -   echo > or >>
+
+The single redirect > will overwrite the entire contents of the file 
+The double redirect >> will write it to the next line
+
+You can output the content of a command right into a file as well
+
+command: ls -ltr > <filename> = This will put the output in the file
+
+##########################################################
