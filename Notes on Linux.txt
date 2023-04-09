@@ -329,3 +329,6 @@ File Display Commands
     tail 
 
 Note: you can use . to signify the current location 
+
+###############################################
+Text Processing
