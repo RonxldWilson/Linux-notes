@@ -433,4 +433,12 @@ Combining and Splitting Files
 
 #########################################################################
 
+Linux File Editor 
 
+There are several editors which are available
+    vi - Visual Editor
+    ed - Standard Line Editor
+    ex - Extended Line Editor
+    emacs - A full screen editor
+    pico - Begineer's editor
+    vim - Advance version of vi
