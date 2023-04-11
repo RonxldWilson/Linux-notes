@@ -31,9 +31,9 @@ You can connect Via SSH if WIN 10 is the OS which is used for the opertion
 
 ### Commands for Traversing the File System
 
-pwd
-cd
-ls -l 
+pwd = print working directory
+cd = change directory
+ls -l = list all the files in the directory 
 
 #Linux File properties
 
@@ -375,3 +375,62 @@ cat file | awk '{$2="Imran"; print $0}'     = Replace words field words
 awk 'length ($0)> 15' file      = Get lines that have more than 15 byte size
 ls -l | awk '{if ($9 == "seinfeld") print $0;}'     = Get the field matching seinfeld in /home/iafzal
 ls -l | awk '{print NF}'    =   Number of fields.
+
+#####################################################################
+grep/egrep
+
+#####################################################################
+sort/uniq
+#####################################################################
+wc 
+
+
+#####################################################################
+Compare files
+
+command: diff (Line by Line)
+This will show the lines in which the two files differ by:
+    Command: diff <file 1> <file 2>
+
+command: cmp (byte by byte)
+    cmp <file 1> <file 2>
+
+
+
+There's not much option to compare two files in windows, this gives an advantage to linux users
+
+#####################################################################
+Compress and uncompressing Files
+
+Command: tar = it takes a bunch of files and put them together also called as tarring
+Command: tar cvf <file.tar> /path = This will compress the files as well 
+Command: tar xvf <file name> =  this will extract everything
+
+Command: gzip = This is used for actual compression of the files
+Command: gzip -d OR gunzip = This is used for uncompressing a file
+
+Generally you can Tar and then zip the file for compression
+#####################################################################
+Truncate File Size
+
+The Linux truncate command is often used to shrink or extend the size of a file to the specified size
+NOTE: THIS IS NOT THE SAME AS ZIP, THIS CHOPS OFF THE ACTUAL FILE SIZE AND REDUCES THE FILE SIZE IN THAT WAY 
+
+Command: truncate -s 10 filename
+
+#######################################################################
+
+Combining and Splitting Files
+    -   Multiple files can be combined into one and 
+    -   One file can be split into multiple files
+
+    Command: cat file1 file2 file3 > file4
+    
+    Command: split -l 300 file.txt childfile
+
+    Split file.txt into 300 liner per file and output to childfileaa, childfileab, childfileac
+
+
+#########################################################################
+
+
