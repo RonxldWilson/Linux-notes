@@ -442,3 +442,79 @@ There are several editors which are available
     emacs - A full screen editor
     pico - Begineer's editor
     vim - Advance version of vi
+
+#vi supplies commands for:
+    Inserting and deleting text
+    Replacing text
+    Moving around the file
+    Finding and substituting strings
+    Cutting and pasting text
+
+#Most common keys:
+    i - insert
+    Esc - Escape out of any mode
+    r - replace
+    d - delete
+    :q!- quit without saving
+    :wq! = quit and save
+
+Command: vi HelloWorld
+    As soon as you hit enter you are in command mode,  then you need to press 'i' or 'r' to do operations on it
+    Once you are in the editing mode, you can edit the file
+    Once that is done, press :wq! to exit and save
+    OR
+    Press Shift Z Z (Z twice)
+    You can press 'u' in command mode to undo changes 
+    If you press 'X' that deletes a character
+    If you want to press enter in the middle of a para, go to the required line, and press 'O'
+    To find a word in the file press '/' in command mode and then type the word, this will reveal the word in the file
+
+####################################################################
+
+There is another editor called as Vim which you need to learn to work properly 
+
+    go to wwww.openvim.com and complete the course on vim to learn this tool
+    www.vimgenius.com
+    vim-adventures.com (Game to learn Vim)
+
+Vim is the next edition of vi editor
+Most of the commands of Vim work on Vi as well 
+
+#####################################################################
+Command: sed
+    Replace a string in a file with a newstring
+    Find and delete a line
+    Remove empty lines
+    Remove the first or n lines in a file
+    To replace tabs with spaces
+    Show defined lines from a file
+    Substitute within vi editor
+    And much more..
+
+It's too complicated, read the documentation on it using man
+
+#####################################################################
+#####################################################################
+User Account Management
+
+Commands:
+    useradd
+    groupadd
+    userdel 
+    groupdel
+    usermod
+
+Files where the record is kept of the user changes which are made:
+    /etc/passwd 
+    /etc/group
+    /etc/shadow 
+
+     
+    
+
+
+
+
+
+
+#####################################################################
