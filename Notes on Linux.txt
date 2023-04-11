@@ -503,18 +503,42 @@ Commands:
     userdel 
     groupdel
     usermod
+    id <username> verifies if the user is created 
+
 
 Files where the record is kept of the user changes which are made:
     /etc/passwd 
     /etc/group
     /etc/shadow 
 
-     
+Example: 
+    Command: useradd -g superheros -s /bin/bash -c "iser description" -m -d /home/spiderman spiderman
+
+    -g to add to the group
+    -s to give a shell
+    -c for user description
+    -m -d to define the home directory and the user home directory 
+    and then the user itself
+
     
+to apply these rules you need to be root for it to work
+ 
+If the usergroup is not defined then the  username will create another usergroup
+
+Example: 
+    useradd spiderman
+    id spiderman - will reveal if the user is created
+    cd /home/   -   whenever a user is created a home directory is also created with it
+    groupadd superheros 
+    cat /etc/groups = At the bottom the newly created groups are displayed
+
+    usermod -G superheros spiderman = this changes the group of the user
 
 
-
-
+    cat etc/passwd 
+    cat etc/group 
+    cat etc/shadow
+            
 
 
 #####################################################################
