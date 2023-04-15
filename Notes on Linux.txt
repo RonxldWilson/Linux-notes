@@ -539,6 +539,17 @@ Example:
     cat etc/group 
     cat etc/shadow
             
-
-
 #####################################################################
+Enabling Password Aging 
+
+There is a file called as: /etc/login.defs
+
+This contains the default password rules like PASS_MAX_DAYS, PASS_MIN_DAYS, PASS_MIN_LEN and so on
+Using this you can set the default parameters to be used for user administration
+
+ It also has other details which can be edited and are imporatant for security constraints
+
+ Command for a particular user:
+
+ Command: ch age [-d lastday] [-m mindays] [-M maxDays] [-W warndays] [-I inactive] [-E expieredatye] user 
+#######################################################################
