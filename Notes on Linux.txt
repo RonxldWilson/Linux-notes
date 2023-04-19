@@ -553,3 +553,106 @@ Using this you can set the default parameters to be used for user administration
 
  Command: ch age [-d lastday] [-m mindays] [-M maxDays] [-W warndays] [-I inactive] [-E expieredatye] user 
 #######################################################################
+
+Switch User and Sudo Access
+
+su -username = this makes the person a root user
+sudo = if you dont have root access 
+visudo = it edits the file which contains the name of the users who have sudo access
+    The file which is edited is /etc/sudoers
+
+
+#######################################################################
+Monitor Users
+
+Command:    
+    -   who  = gives the number of people who are logged in and how many terminals they have open
+    -   last  = Last time the user logged in, for every single user 
+    -   w   =    Works pretty much as who but gives way more info
+    -   finger = does a trace of your user and shows where they are coming from and what kind of protocol they are using
+    -   id  =  Gives the info about you, if put id username, will give the info about the user
+
+#######################################################################
+
+Talking to Users
+Command:
+    -   users   = To display who all are logged in
+    -   Wall    = Broadcast the message to everyone - Enter the message after pressing wall and hit ctrl + D 
+    -   Write  <username> = To command to one particular user
+
+#######################################################################
+
+Linux Account Authentication
+
+Types of Accounts
+    Local Account
+    Domain/Directory Accounts
+
+LDAP = Lightweight Direcotry access protocol
+
+Suppose you have to create a new user to a thousand diffrent servers, it is not possible to individually add them
+to all those servers. Therefore you will need to use a server/directory server which contains the name of the users
+and autheticates them to the server.
+
+#######################################################################
+
+Diffrence between Active Directory, LDAP, IDM, WinBIND, OpenLDAP and other services
+
+Active Directory = Owned by Microsoft 
+IDM = Idenentity Manager developed by redhat
+WinBIND = Used in linux to communicate with windows(developed by Samba) you can use the windows directory to authenticate linux users
+
+OpenLDAP (Open Source)
+IBM Directoy server
+Jump Cloud
+
+All of this are directory services, they use LDAP behind the scenes to run the process 
+All of these can be installed and run on the server to manage the access management 
+
+LDAP is a protocol aka Lightweight Directory access protocol
+
+#######################################################################
+
+System Utility Commands
+
+Commands:
+    -   date    = Displays the date of the server  
+    -   uptime  = Displays the uptime of the server and the load average. Shows the average in 1 min, 5min, and 15 min   
+    -   hostname = Displays the hostname of the linux machine 
+    -   uname   = Tells that you are in linux machine
+        uname -a = more details
+    -   which pwd = will display the location of the file of the command
+        Note = all commands are script which are written by developers and is atext file in itself
+    -   cal     = Displays Calendar
+        cal 9 1977 displays calendar of that year
+        cal 2023 = displays the whole year calendar
+    -   bc      =  basic calculator 
+
+######################################################################
+
+Processes and Jobs
+
+Application = Services are like program which run on computers
+Script = Shell script or commands are list of instructions 
+Process = when you start an applocation it genrated processes 
+Daemon is alos a process which listens to the incoming and outgoing traffic
+Threads = Every process could have multiple threads associated with it
+Job or Workorder = Runs a service or process at a scheduled time
+
+Commands:
+    -   Systemctl or service =  
+    -   ps  =   Displays all the processes which are running 
+    -   top = displays the use of memory and other details by the machine
+    -   kill = To kill a process
+    -   Crontab = when a process is scheduled then it becomes a Job
+    -   at = similar to crontab
+
+
+#################################################################################
+
+
+
+
+
+
+
