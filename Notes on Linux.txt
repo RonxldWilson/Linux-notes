@@ -650,9 +650,109 @@ Commands:
 
 #################################################################################
 
+#################################################################################
+
+#################################################################################
+
+#################################################################################
+
+#################################################################################
+
+#################################################################################
+
+#################################################################################
+
+#################################################################################
+Shell Scripting
+
+Linux Kernel - Interface between hardware and software
+Kernel talks to the hardware 
+
+Layers of a computer
+1. User
+2. Application
+3. Shell - GUI, bash, csh
+4. Kernel
+5. Hardware - CPU, Memory and HD
+
+Shell and Kernel built together makes up the operating system.
+
+Shell+Application = software
+
+#################################################################################
+What is a shell?
+    Its like a container, it holds the enviroment information
+    Interface between users and kernel/OS
+    CLI is a Shell
+
+Find your Shell
+    echo $0
+    available Shells "cat /etc/shells 
+    your shell /etc/passwd 
+
+windows GUI is a shell
+Linux KDE GUI is a shell
+Linux sh, bash etc. is a shell
+
+#################################################################################
+Types of Linux Shell
+    -   Gnome - Both are GUI Shells
+    -   KDE - Both are GUI Shells
+    -   sh - Shell 
+    -   bash - Born again shell 
+    -   csh and tcsh - These are built on C 
+    -   ksh - korn shell - mostly used in solaris 
+
+    If you have a csh you cant run bash   
+
+You are given shell at the time of user creation
 
 
+#################################################################################
+
+What is a Shell Script?
+    A shell script is an executable file containing multiple shell commands that are executed sequetially. 
+    The File can contain
+    -   Shell(#!/bin/bash)      - This defines that you are going to run the script in bash shell environment
+    -   Comments(# comments)
+    -   Commands (echo, cp, grep etc)
+    -   Statements (if, while, for etc)
+
+    Shell scripts should have an executable permission (e.g. -rwx r-x r-x)
+    Shell script has to be called from absolute path (eg /home/userdir/script.bash)
+    If called from current location then ./script.bash
 
 
+#################################################################################
+Basic Shell scripts
 
+    Command:
+        echo: Output to screen
+        Creating Tasks:
+            Telling your id, current location, your files/directories, system info
+            Creating files or Directories
+            Output to a file ">"
 
+        Filters/Text processors through scripts (cut, awk, grep, sort, uniq, wc)
+
+#################################################################################
+
+#################################################################################
+
+#################################################################################
+
+#################################################################################
+
+#################################################################################
+
+#################################################################################
+
+#################################################################################
+
+#################################################################################
+
+#################################################################################
+
+#################################################################################
+
+#################################################################################
