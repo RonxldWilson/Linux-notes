@@ -736,20 +736,80 @@ Basic Shell scripts
         Filters/Text processors through scripts (cut, awk, grep, sort, uniq, wc)
 
 #################################################################################
+Shell Scripting Examples
+
+If then Scripts 
+
+<add from the handouts>
+#################################################################################
+Check other servers connectivity
+
+This task can also be done thru monitoring tools
+<add the scripts thru the course>
+
+#################################################################################
+For Loop Scripts Example
+
+
+#################################################################################
+Case Statements Scripts
 
 #################################################################################
 
 #################################################################################
+ALIASES
+
+Alias is a command which is used to create a concatenated command for repetetive commands
+
+Command: 
+    alias ls="ls -al"
+    alias pl="pwd; ls"
+    alias tell="whoami; hostname;pwd"
+    alias lmar="ls -l | grep Mar"               // This command will first list down all the files in the dir, and then find the file with Mar
+
+User Alias
+
+Aliases are created just for once, while the session is active, if the user logs out the alias is removed. 
+Additionally the alias wont be available if the user is logging in from any other way thru a devce or putty
+
+#####User Alias
+To Create and save the alias permanently
+GoTo -> home directory -> ls -la -> GoTo /etc/bashrc file-> vi this file
+and add at the end 
+    alias l="ls -ltri"
+
+#####Global Alias
+To Create and save the alias permanently
+GoTo -> home directory -> ls -la -> this will display .bashrc file-> vi this file
+and add at the end 
+    alias l="ls -ltri"
+
+
+
+#################################################################################
+Shell History
+
+Commmand: 
+    history
+
+This will display all the commands you have ran till date on the system as that user
+
+If you want to run a previously ran command, you can just
+    Command:    !<Command Number>
+
+History of the commands is stored in : "/home/username/.bash_history
+
+This can also be used as a diagnostic tool to see what all commands did the users ran which got the server down
+
+If you remember the certain instance of what was ran, you can grep or awk from the history command
+
+To view the other users history become Root
+
+-cat /home/users-dir-name/.bash_history
 
 #################################################################################
 
-#################################################################################
 
-#################################################################################
-
-#################################################################################
-
-#################################################################################
 
 #################################################################################
 
