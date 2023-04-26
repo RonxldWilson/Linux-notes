@@ -808,10 +808,18 @@ To view the other users history become Root
 -cat /home/users-dir-name/.bash_history
 
 #################################################################################
-
-
-
+Networks for Linux
 #################################################################################
+Networking Componets
+
+1. IP - An IP address is used to refer to a machine on a network
+2. Subnet Mask - is a 32 bit number that masks the IP address and divides the IP address into
+network address and host address. Subnet mask is made by setting network bits to 1 and setting host bits to all 0s
+
+
+Note: ifconfig stands for interface configuration
+
+ 
 
 #################################################################################
 
