@@ -821,6 +821,59 @@ Note: ifconfig stands for interface configuration
 
  
 
+
+#################################################################################
+Disk Management in Linux
+
+#################################################################################
+ 
+System Run Levels
+
+These are diffrent modes in which the system is started: Like in windows we have Safe Mode, similarly we have diffrent ways to starts a System
+
+Different System Run Levels
+
+Main Run Levels
+-0 Shut down or halt the system
+-1 Singel User mode' usually aliassed as s or S
+-6 Reboot the System // this is same as the command >reboot
+
+Other Run Levels
+-2 Multiuser mode without networking
+-3 Multiuser mode with networking
+-5 Multiuser mode with networking and GUI 
+
+Generally Level 5 is used
+
+Command:
+> who -r = will reveal the current level of the system
+> init <level number>
+
+
+
+#################################################################################
+Complete Boot Process
+
+#################################################################################
+Linux Boot Process
+
+
 #################################################################################
 
 #################################################################################
+
+#################################################################################
+
+
+#################################################################################
+RAID 
+
+Redundant Array of Independent Disks
+
+Types of RAID
+1. RAID0 - If you lose 1 disk, then it's all gone 5+5=10G
+2. RAID1 - You make one mirror of the data 5,5 = 5G
+3. RAID5 - You put some data about the first disk into the second disk and the data about the second disk in third and so in a round robin fashion 5+5+5 = 12G
+
+#################################################################################
+
