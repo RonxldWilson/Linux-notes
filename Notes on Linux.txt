@@ -524,7 +524,7 @@ Example:
 to apply these rules you need to be root for it to work
  
 If the usergroup is not defined then the  username will create another usergroup
-
+d
 Example: 
     useradd spiderman
     id spiderman - will reveal if the user is created
@@ -819,7 +819,6 @@ network address and host address. Subnet mask is made by setting network bits to
 
 Note: ifconfig stands for interface configuration
 
- 
 
 
 #################################################################################
