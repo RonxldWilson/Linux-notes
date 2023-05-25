@@ -860,8 +860,18 @@ New LInux Boot Process
 
  
 #################################################################################
+## Disk Partition
+
+Commands:
+    df - disk info and how much is used and how it is partioined
+    fdisk - disk total size is how many partitions have been created
+
+    df -h = shows the output in human readable from 
+    df -l = shows the output of the local disks
 
 #################################################################################
+Adding Disk and Creating Partitions
+
 
 #################################################################################
 
